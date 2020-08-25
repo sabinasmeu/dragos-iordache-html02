@@ -30,17 +30,69 @@ body {
   background-color: lightpink;
 }
 
+/* In director se afla un fisier CSS cu trei media queries setate pentru trei breakpointuri diferite
+ */
+.heading {
+  display: none;
+}
+.box-4 {
+  color: red;
+}
 
 @media (max-width: 576px) {
+  /* Ascunde folosind proprietatea display casuta 2 pe rezolutiile mai mici de 576
+  */
 
+  .box-2 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-
+  /* Coloreaza textul casutei 5 alb pe rezolutiile mai mici de 768px
+ */
+  .box-5 {
+    color: white;
+  }
+  /* Schimba bordura casutei 3 in verde pentru rezolutiile mai mici de 768  */
+  .box-3 {
+    border: 5px solid green;
+  }
 }
 
 @media (max-width: 992px) {
+  /* Ascunde casuta 4 pe rezolutiile mai mici de 992px
+ */
+  .box-4 {
+    display: none;
+  }
+  /* Ascunde casuta 3 pentru rezolutiile mai mici de 992px  */
+  .box-3 {
+    display: none;
+  }
 
+  /* Schimba textul casutei 4 in rosu pentru rezolutiile mai mari de 992px */
+
+  .box-4 {
+    color: black;
+  }
 }
+/* Adauga un media query pentru rezolutiile de pana in 1200px
+ */
 
-
+@media (max-width: 1200px) {
+  /* Ascunde casuta 5 pe rezolutiile mai mici de 1200px
+ */
+  .box-5 {
+    display: none;
+  }
+}
+/* Adauga un media query care sa se aplice intre 600px si 1200 de px
+ */
+@media (min-width: 600px) and (max-width: 1200px) {
+  /* Adauga un element h1 in document, deasupra casutelor si afiseaza-l doar intre 600px si 1200px
+ */
+  .heading {
+    display: block;
+  }
+}
