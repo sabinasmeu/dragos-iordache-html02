@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
- 
-
-  <title>Picture & srcset</title>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Picture & scrset</title>
 </head>
+
 <body>
+  <!-- In director se afla un document HTML si un alt director cu imagini.
+Folosind elementul picture cu srcset, afiseaza:
+Imaginea de 150px pana in rezolutii de 576px;
+Imaginea de 420px pana in rezolutii de 768px;
+Imaginea de 820px pana in rezolutii de 992px;
+Imaginea de 1900 pentru alte rezolutii
+ -->
+  <picture>
+    <source
+      media="(max-width: 576px)"
+      srcset="images/w150.png"
+    >
+    <source
+      media="(max-width: 768px)"
+      srcset="images/w420.png"
+    >
+    <source
+      media="(max-width: 992px)"
+      srcset="images/w820.png"
+    >
+    <img
+      src="images/w1900.png"
+      alt="wide image"
+    >
 
+  </picture>
 </body>
-</html>
 
+</html>
