@@ -1,0 +1,42 @@
+.squares {
+  width: 80%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.square-magenta {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 1px solid black;
+  background-color: turquoise;
+  background-color: magenta;
+}
+
+.square-peru {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 1px solid black;
+  background-color: turquoise;
+  background-color: peru;
+}
+
+.square-purple {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 1px solid black;
+  background-color: turquoise;
+  background-color: purple;
+}
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

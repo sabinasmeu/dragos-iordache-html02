@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/sass ./scss/app.scss ./css/style.css",
+    "minify": "./node_modules/.bin/sass ./scss/app.scss ./css/style.css --style compressed",
+    "watch": "./node_modules/.bin/sass --watch ./scss/app.scss:./css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

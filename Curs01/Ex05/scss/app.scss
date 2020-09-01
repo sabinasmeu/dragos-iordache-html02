@@ -1,0 +1,54 @@
+$brand-main: red;
+$brand-secondary: grey;
+
+// Pentru ancorele din lista neordonata elimina linia si coloreaza-le rosii atunci cand mouseul face hover pe ele folosind simbolul & din Sass
+ul {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $brand-main;
+    }
+    // Coloreaza aceleasi ancore mov atunci cand se face click pe ele, folosind simbolul & si pseudo-clasa :active
+    &:active {
+      color: green;
+    }
+    // Coloreaza aceleasi ancore verzi atunci cand ele sunt vizitate, folosind simbolul & si pseudo-clasa :visited
+
+    &:visited {
+      color: $brand-secondary;
+    }
+  }
+}
+
+// Seteaza paddingul pentru paragrafele cu clasa para la 10px pe verticala si 20 pe orizontala
+.para {
+  padding: 10px 20px;
+}
+
+// Seteaza latimea paragrafelor para-short la 50% si centreaza-le
+
+.para-short {
+  width: 50%;
+  margin: 0, auto;
+}
+// Folosind inspectorul, aplica clasa reverse pe elementul body, si cand aceasta este aplicata, schimba paragrafele astfel incat para-short sa fie 100% iar para sa fie 50% doar pentru paragrafele din elementele cu clasa paragraphs. Paragrafele cu clasa para-short vor avea paddingul de 10px pe verticala si 20 pe orizontala, iar cele cu clasa para nu vor avea padding.
+
+.paragraphs {
+  .para {
+    padding: 10px 20px;
+
+    .reverse & {
+      width: 50%;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+  .para-short {
+    width: 50%;
+    margin: 0 auto;
+    .reverse & {
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }
+}

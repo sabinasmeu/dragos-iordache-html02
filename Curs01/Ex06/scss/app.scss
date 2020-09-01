@@ -1,0 +1,53 @@
+// Creeaza un mixin care atunci cand este aplicat pe selectorul unui element (foloseste clasa square) va creea un patrat de 200px cu bordura neagra de 1px si fundalul turcoaz
+@mixin square {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 1px solid black;
+  background-color: turquoise;
+}
+
+// Creeaza un mixin care controleaza fundalul elementului pe care este aplicat folosind parametri.
+
+@mixin box-bg($bg: blue) {
+  background-color: $bg;
+}
+
+// Aplica o clasa squares pe primul div, seteaza-i latimea la 80%, o bordura neagra de 1px, si padding de 10px. Acest div trebuie sa fie centrat.
+.squares {
+  width: 80%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+// Creeaza in mark-up trei elemente div cu clasa square, fiecare avand una din clasele: square-magenta, square-peru si square-purple. Folosind mixinurile create, coloreaza fiecare patrat conform clasei sale de CSS
+
+.square-magenta {
+  @include square;
+  @include box-bg(magenta);
+}
+.square-peru {
+  @include square;
+  @include box-bg(peru);
+}
+.square-purple {
+  @include square;
+  @include box-bg(purple);
+}
+
+// Aplica clasa circles pe urmatorul div, centreaza-l, seteaza-i latimea la 75% si aplica-i o bordura maro, punctata de 2px, colturi rotunijte de 20px
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+// Creaza un mixin care atunci cand este aplicat pe selectorul unui element (foloseste clasa circle) va creea un cerc de 200px cu bordura rosie de 3px si fundalul mov
+
+@mixin circle {
+  border: 3px solid red;
+  background-color: purple;
+}

@@ -1,0 +1,64 @@
+//  Aplica o clasa squares pe primul div, seteaza-i latimea la 80%, o bordura neagra de 1px, si padding de 10px. Acest div trebuie sa fie centrat.
+
+.squares {
+  width: 80%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+// Creeaza o clasa square care sa redea un patrat de 200px cu bordura neagra de 1px si fundalul turcoaz
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: turquoise;
+}
+// Creeaza clase square-magenta, square-peru si square-purple care sa seteze culoarea de fundal conform numelor lor si sa extinda clasa square
+.square-magenta {
+  @extend .square;
+
+  background-color: magenta;
+}
+.square-peru {
+  @extend .square;
+  background-color: peru;
+}
+.square-purple {
+  @extend .square;
+  background-color: purple;
+}
+// Aplica clasa circles pe urmatorul div, centreaza-l, seteaza-i latimea la 802px si aplica-i o bordura neagra solida de 1px
+
+.circles {
+  width: 802px;
+  height: 802px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+// Creaza o clasa circle care sa redea un cerc de 200px de fundal maro si bordura neagra de 1px
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: brown;
+}
+// Creaza clase circle-red, circle-green, circle-blue care sa seteze culoarea de fundal conform numelor lor si sa extinda clasa circle
+
+.circle-red {
+  background-color: red;
+  @extend .circle;
+}
+.circle-green {
+  background-color: green;
+  @extend .circle;
+}
+.circle-blue {
+  background-color: blue;
+  @extend .circle;
+}
