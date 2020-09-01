@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+.box-1 {
+  margin-top: 10px;
+  padding-left: 6;
+}
+
+.box-2 {
+  margin: 8px 64px;
+  padding: 16px;
+}
+
+.box-3 {
+  padding: 32px 0 0 0;
+  border-width: 8px;
+  margin-right: 32px;
+}
+
+.box-4 {
+  margin-top: 32px;
+  border-width: 16px;
+  padding: 25px;
+}
+
+.box-5 {
+  margin: 8px 64px;
+  border-width: 16px;
+  padding: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

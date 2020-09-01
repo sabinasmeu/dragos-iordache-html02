@@ -1,0 +1,7 @@
+// Creaza in fisierul _partial2.scss o clasa brand-inverted in care culorile sa fie inversate fata de brand-main, dar seteaza variabila brand-main ca albastra
+$brand-main: blue;
+
+.brand-inverted {
+  background-color: $brand-neutral;
+  color: $brand-main;
+}

@@ -11,8 +11,13 @@ body {
   border: 1px solid #000;
 }
 
+//Ajusteaza clasa box-1 fara sa adaugi variabile sau numere astfel incat:
+//Marginea de sus sa fie 10px
+//Paddingul din stanga sa fie 6px
+
 .box-1 {
-  margin-top: $sm;
+  margin-top: $sm + $xs - ($sm / $xs);
+  padding-left: ($md / $xs) + ($sm / $xs);
 }
 
 .box-2 {
@@ -27,13 +32,13 @@ body {
 }
 
 .box-4 {
-  margin-top: $lg; 
+  margin-top: $lg;
   border-width: $md;
   padding: 25px;
 }
 
 .box-5 {
   margin: $sm $xl;
-  border-width: $md; 
+  border-width: $md;
   padding: $lg;
 }

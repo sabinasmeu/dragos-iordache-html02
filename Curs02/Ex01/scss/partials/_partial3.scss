@@ -1,0 +1,9 @@
+// Creaza un fisier _partial3.scss si importa-l in app.scss;  in acest fisier, suprascrie culoarea brand-main in roz.
+$brand-main: pink;
+
+// Creaza o clasa numita brand-special care sa aibe background variabila brand-main si brand-neutral pentru text
+
+.brand-special {
+  background-color: $brand-main;
+  color: $brand-neutral;
+}
